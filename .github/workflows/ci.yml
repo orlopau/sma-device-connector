@@ -1,0 +1,19 @@
+name: CI Backend
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm run install:backend
+      - run: npm run test:backend
+        env:
+          CI: true

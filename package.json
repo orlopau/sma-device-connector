@@ -1,0 +1,12 @@
+{
+  "name": "sma-device-connector",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "test:backend": "cd backend && npm run test"
+  },
+  "author": "Paul Orlob",
+  "license": "MIT"
+}
